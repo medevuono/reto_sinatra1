@@ -12,7 +12,7 @@ get "/" do
       HTML
     else
       <<-HTML 
-        <h1>"Hola #{params[:name]}!"</h1>
+        <h1>Hola #{params[:name]}!</h1>
       HTML
     end    
   end
