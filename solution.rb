@@ -1,7 +1,7 @@
 require "sinatra.rb"
 
 get "/" do
-  unless params[:name]
+  unless params[:nombre]
     <<-HTML
       <h1>Hola desconocido!</h1>
     HTML
@@ -12,7 +12,7 @@ get "/" do
       HTML
     else
       <<-HTML 
-        <h1>Hola #{params[:name]}!</h1>
+        <h1>Hola #{params[:nombre]}!</h1>
       HTML
     end    
   end
