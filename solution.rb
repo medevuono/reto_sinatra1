@@ -19,5 +19,7 @@ require "sinatra.rb"
 # end
 
 get "/makers/juan" do 
-  "Hola Juan!"  
+  <<-HTML
+    <h1>Hola Juan!</h1>
+  HTML
 end
