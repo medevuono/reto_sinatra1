@@ -18,8 +18,8 @@ get "/" do
   end
 end
 
-get "/makers/juan" do 
+get "/makers/:nombre" do 
   <<-HTML
-    <h1>Hola Juan!</h1>
+    <h1>Hola #{params[:nombre].capitalize}!</h1>
   HTML
 end
